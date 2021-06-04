@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+::selection {
+    background-color:#67647e;
+}
+header {
+    justify-content: space-between;
+    font-family:'Raleway',sans-serif;
+}
+main{
+    font-family:'Raleway',sans-serif;
+    color:hsl(243, 87%, 12%);
+}
+section {
+    color:hsl(243, 87%, 12%);
+    padding:50px;
+    background-color:#f8f8fe; 
+}
+.work-flow {
+    background-color: hsl(238, 22%, 44%);
+    padding: 50px;
+    color: white;
+}
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    color:white;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+section,footer,header,.card div,.box,.work-flow  {
+    display:flex;
+}
+main h1 {
+    line-height: 50px;
+    font-size: 39px;
+}
+main p {
+    line-height: 23px;
+}
+main,header {
+    margin:50px;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+header a {
+    color:black;
+}
+section a {
+    color:hsl(170, 45%, 43%);
+}
+header li {
+    display:inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}
+input[type="submit"]{
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    padding: 12px;
+    width: 204px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: .6s ;
+}
+input[type="email"]{
+    color: white;
+    padding: 10px;
+    width: 274px;
+    outline: 1px solid black;
+    border:none;
+}
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius:10px;
+}
+.card div img {
+    border-radius: 50%;
+    height: 33px;
+}
+h5,h6 {
+    margin: 0;
+}
+.work-sheet {
+    flex-direction: column;
+}
+h5 {
+    font-size: 12px;
+    opacity: .6;
+}
+.work-sheet {
+    margin-left: 10px;
+}
+.card > img {
+    width: 20px;
+}
+.arrow {
+    height: 18px;
+    position: relative;
+    top: 23px;
+    left: 5px;
+}
+.work-flow input[type="email"] {
+    width: 450px;
+    color: black;
+}
+.work-flow input[type="submit"] {
+    margin-top: 22px;
+}
+input {
+    border-radius: 3px;
+}
+footer li {
+    line-height:26px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+h4::before {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+    width: 155px;
+    right: -19px;
+    top:25px;
+}
+h4 {
+    position: relative;
+    cursor:pointer;
+    color:hsl(170, 45%, 43%);
+    transition: .5s ease-in-out;
+}
+footer li a:hover {
+    color:hsl(224, 93%, 58%);
+}
+footer ul {
+    margin-left: -38px;
+}
+footer>div div {
+    margin-top: 28px;
+    margin-bottom: 25px;
+}
+section > * {
+    flex-basis: 100%;
+}
+main input[type="submit"] {
+    margin-top:7px;
+}
+.icons div {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.6s;
+    border: .5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+}
+.icons div:hover {
+    color: hsl(224, 100%, 73%);
+}
+input[type="submit"]:hover {
+    opacity: .6;
+}
+section h4:hover {
+    opacity: .6;
+}
+footer > div div img {
+    padding-right:10px;
+}
+.curve img {
+    display: inherit;
+}
+main {
+    margin-bottom: 120px;
+}
+section {
+    padding-bottom: 150px;
+}
+.work-flow  {
+    padding-bottom: 85px;
+    align-items:center;
+}
+.work-flow>* {
+    flex-basis: 100%;
+}
+@media (max-width:900px) {
+    main,section {
+        flex-direction: column-reverse;
+    }
+    .work-flow,footer {
+        flex-direction: column;
+    }
+    body {
+        text-align: center;
+    }
+    .box,.card {
+        justify-content: center;
+    }
+    form {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    }
+    h6 {
+        margin-right: 76px;
+    }
+    footer {
+        text-align: start;
+    }
+    input[type="email"] {
+        width: 224px !important;
+    }
+    .work-flow input[type="submit"] {
+        width: 244px;
+        margin-left: 0;
+        margin-top: 7px;
+    }
+    main input[type="submit"] {
+        width: 248px;
+        margin-left: 0;
+        margin-top: 11px;
+    }
+    .icons {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    i {
+        cursor: pointer;
+        font-size: 17px;
+    }
+    header ul {
+        display: inline;
+    }
+}
+@media (min-width:1200px) {
+    .card {
+        width: 320px;
+    }
+    footer {
+        padding: 72px;
+        padding-bottom: 92px;
+        align-items: center;
+    }
+    header li {
+        font-size: 18px;
+    }
+}
